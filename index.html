@@ -28,7 +28,9 @@
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <!-- 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5E6RVT2P70"></script> -->
 	<!-- Google tag (gtag.js) -->
+    <script src="js/simplyCountdown.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5E6RVT2P70"></script>
+    
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -98,6 +100,8 @@
                             </button> -->
                             <button type="button" class="btn-play mx-auto" onclick="playVideo()"><span></span>
                             </button>
+
+                            <div class="simply-countdown simply-countdown-one"></div>
                         </div>
                     </div>
                 </div>
@@ -119,6 +123,7 @@
                             </button> -->
                             <button type="button" class="btn-play mx-auto" onclick="playVideo()"><span></span>
                             </button>
+                            <div class="simply-countdown simply-countdown-one"></div>
                         </div>
                     </div>
                 </div>
@@ -584,6 +589,33 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        // var d = new Date(new Date().getTime() + 122 * 101 * 200 * 1017);
+     //    var d = new Date(new Date().getTime() + 54 * 86 * 88 * 1022);
+         //  var d = new Date("Mon Nov 29 2021 03:15:38 GMT+0530 (India Standard Time)");
+         var d = new Date(2022, 22, 24, 09, 00, 00, 0);
+          console.log(d);
+
+ // default example
+ simplyCountdown('.simply-countdown-one', {
+     year: d.getFullYear(),
+     month: d.getMonth() + 1,
+     day: d.getDate()
+ });
+
+ //jQuery example
+ $('#simply-countdown-losange').simplyCountdown({
+     year: d.getFullYear(),
+     month: d.getMonth() + 1,
+     day: d.getDate(),
+     enableUtc: false
+ });
+     if(navigator.onLine) {
+         // alert("online");
+     }else {
+         // alert("offline");
+     }
+</script>
 </body>
 
 </html>
