@@ -7645,7 +7645,7 @@ button.bg-dark:focus {
 
 .mb-n2,
 .my-n2 {
-  margin-bottom: -0.5rem !important;
+  /* margin-bottom: -0.5rem !important; */
 }
 
 .ml-n2,
@@ -12032,9 +12032,11 @@ a:hover {
 }
 
 h1 {
-	font-size: 4.5vh;
+	  /* font-size: 4.5vh; */
+    font-size: 3.3vh;
     letter-spacing: 4px;
     padding-top: .5em;
+    margin-bottom: 0.5rem !important;
 }
 
 @media (min-width: 992px) {
